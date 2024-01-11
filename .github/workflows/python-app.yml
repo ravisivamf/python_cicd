@@ -36,4 +36,5 @@ jobs:
       run: |
         pip install pytest
         export PYTHONPATH='python_cicd/src'
-        pytest simple.py
+        pytest 'python_cicd/src/simple.py'
+        
