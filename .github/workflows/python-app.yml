@@ -25,4 +25,6 @@ jobs:
           ruff --format=github --target-version=py310 .  
         continue-on-error: true  
       - name: Test with pytest  
-        run: pytest  
+        run: |
+          pip install pytest
+          pytest  
