@@ -25,8 +25,4 @@ jobs:
           ruff --format=github --target-version=py310 .  
         continue-on-error: true  
       - name: Test with pytest  
-        run: |  
-          coverage run -m pytest  -v -s  
-      - name: Generate Coverage Report  
-        run: |  
-          coverage report -m
+        run: pytest  
