@@ -34,7 +34,5 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Test with pytest
       run: |
-        pip install pytest
-        export PYTHONPATH='python_cicd/src'
-        pytest 'simple.py'
-        
+        export PYTHONPATH=src
+        pytest
